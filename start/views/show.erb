@@ -5,9 +5,9 @@
 <p>Quantity: <%= @order.quantity %></p>
 
 <form method="post" action="/pizza_orders/<%= @order.id %>/delete" >
-  <input type="submit" value="delete">
+  <input type="submit" value="DELETE">
 </form>
 
 <form method="get" action="/pizza_orders/<%= @order.id %>/update" target = "_self">
-  <input type="submit" value="update">
+  <input type="submit" value="UPDATE">
 </form>
