@@ -1,0 +1,6 @@
+<p>ALL THE PIZZAS!</p>
+<% @orders.each do |order| %>
+<%=  order.pretty_name %>
+<p>Order: <%= order.topping %> x <%= order.quantity.to_s %></p>
+<a href='/pizza_orders/<%= order.id %>'> Show more </a>
+<% end %>
